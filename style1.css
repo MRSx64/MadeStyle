@@ -1,0 +1,610 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap'); 
+/* BODY */
+/* HEADER */
+/* FOOTER */
+/* PAGINA INICIAL*/
+/* EXTRAS*/
+/* @MEDIA */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Quicksand', sans-serif,'Tangerine', cursive;}
+
+
+/* BODY */
+body {
+    font-weight: 300; 
+    max-height: 100vh;
+    background-color:white;
+}
+
+/* HEADER */
+header {
+    margin:  0 auto;
+    justify-content: center; 
+    background: white;
+    z-index: 1000;
+    transition: 0.5s;
+}
+header .redes {
+    padding: 2px;
+    background-color:#93b1e3;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-right: 20px;
+}
+
+header .redes img{
+    color: #786B8C;
+    width: 1rem;
+    margin: 2px 16px;
+    border-radius: 2px;
+}
+
+header .redes img:hover{
+    background-color: #2f2144ce;
+}
+
+header .menu{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #786B8C;
+}
+
+header .menu img{
+    margin-left: 4em;
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    margin-right: 6em;
+}
+
+header .navigation li {
+    padding: 8px;
+    list-style: none;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+header .navigation li:hover {
+    background-color: rgba(17, 17, 34, 0.295);
+    letter-spacing: 2px;
+}
+
+header .navigation li a {
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#slyder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 82vw;
+    height: 79vh;
+    position: relative;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-content: center;}
+
+    
+#slyder img{
+        opacity: 0;
+        position: absolute;
+        opacity: 0;
+        position: absolute;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+#slyder img.selected{
+        opacity: 1;
+    }
+
+
+/* MAIN */
+
+main{
+    margin: 0 auto
+}
+
+main .facaseuprojet{
+    position: relative;
+}
+
+main .facaseuprojet figure{
+    background-image: url(./imagem/bi-picture.jpg);
+    background-position: center center;
+}
+main .facaseuprojet div{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 5vh;
+   
+}
+main .facaseuprojet div a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: 0 auto;
+    padding-top: 3px;
+    transition: 0.5s;
+}
+main .facaseuprojet div a:hover{
+    font-weight: bold;
+    color: #1d194e;
+    letter-spacing: 2px;
+}
+
+.projeto {
+    padding: 120px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.projeto .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+}
+
+.projeto .container p{
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.projeto .imgProjeto{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+}
+
+.ambiente{
+    background-color: #786b8c27;
+}
+
+.ambiente .title{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .tituloTexto{
+    font-size: 3em;
+    font-weight: 300;
+
+}
+main .tituloTexto span{
+    font-size: 2em;
+    color:#93b1e3;
+    font-family: 'Tangerine';
+}
+
+.ambiente .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+   
+}
+.ambiente .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(14, 4, 4, 0.541);
+}
+.ambiente .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 194px;
+}
+
+.ambiente .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ambiente .content .box .text{
+    padding: 15px 0 5px;
+}
+
+.ambiente .content .box .text h3{
+    font-weight:400;
+    color:#111;
+}
+
+.empresa{
+    padding: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.empresa .somos{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.empresa .boxEmp1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    top: 50px;
+   
+}
+.empresa .boxEmp2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 22px;  
+}
+
+.boxEmp2 p {
+        font-family: 'Quicksand';
+        font-weight: 400;
+        font-size: 18px;}
+
+section.contato{
+    background: url(imagem/pres.jpg);
+    background-size: cover;
+}
+
+.contato .title{
+    color: #fff;
+    width: 100%;
+    height: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contato p {
+        font-size: 1.5em;
+}
+
+.contatoForm{
+    padding: 75px 50px;
+    background: white;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contatoForm h3{
+    color:#111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contatoForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contatoForm .inputBox input,
+.contatoForm .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contatoForm .inputBox input[type='submit']{
+    font-size: 1em;
+    color:#fff;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.contatoForm .inputBox input[type='submit']:hover{
+ background: #923051;
+ font-weight: 800;
+}
+
+
+/* FOOTER */    
+.footer { 
+    color: white;
+    background-color: #786B8C;
+    width: 100%;
+}
+.contFoot{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.copyrightText{
+    width: 100%;
+    font-size: 14px;
+    padding: 6px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #2f2144ce;
+}
+
+.copyrightText p{
+    color: rgb(255, 255, 255);
+}
+
+.copyrightText .dev{
+    color: #cac3c3;
+}
+
+
+@media (max-width: 1200px){
+
+.projeto {
+        padding: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+.empresa{
+
+    flex-direction: column;
+}
+.empresa .somos{
+
+    flex-direction: column;
+}
+.empresa .boxEmp2 {
+       top:20px;
+    }
+.contatoForm {
+        max-width: 440px;
+        margin-top: 62px;
+    }
+      
+
+
+}
+@media (max-width: 991px){
+
+header {position: relative;
+    }
+
+header .menu.active{
+        top: 0;
+        position: fixed;
+        background-color: #fff;
+    }
+    
+header .menu img {
+        margin-left: 3em;
+    }
+
+.menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(imagem/pmenu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+.menuToggle.active{
+    left: 88vw;
+    position: fixed;
+    background: url(imagem/pmenu.png);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+header .navigation {
+        display: none;
+    }
+
+header .navigation.active{ 
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 5em;
+        left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: rgb(255, 255, 255);
+        justify-content: flex-start;}
+
+header .navigation li:hover {
+    background-color: rgba(66, 44, 143, 0.514);
+    letter-spacing: 2px;
+}
+
+header .navigation li a 
+{
+    font-size: 1.6em;
+    color: #111;
+}
+
+
+#slyder{
+    width: 96vw;
+    height: 70vh;
+}
+#slyder img{
+    height: auto;
+}
+
+.projeto 
+    {padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.empresa {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    font-size: 1em;
+}
+.empresa .somos {
+        flex-direction: column;
+}
+
+.empresa .boxEmp2 {
+        padding: 42px;
+    }
+
+
+.empresa .boxEmp2 p 
+{
+    font-size: 16px;
+}
+
+.contato p {
+    font-size: 1em;
+}
+    
+.contatoForm {
+    padding: 20px 36px;
+    max-width: 100%;
+}
+
+
+.footer{
+    padding: 10px;
+}
+
+@media (max-width: 570px){
+
+header .redes {
+    justify-content: center;
+}
+
+.menuToggle.active {
+        left: 78vw;
+}
+
+#slyder {
+    width: 88vw;
+    height: 50vh;
+}
+
+main .facaseuprojet div a {
+    font-size: 1.2em;
+}
+
+main .tituloTexto {
+    font-size: 2em;
+}
+
+.projeto {
+    padding: 10px 10px;
+}
+
+.projeto .container p {
+    font-size: 14px;
+}
+.empresa {
+    padding: 2px;
+}
+
+.empresa .boxEmp2 {
+    padding: 30px;
+}
+.empresa .boxEmp2 p {
+    font-size: 14px;
+}
+
+section.contato {
+    width: 95vw;
+    height: 38em;
+    background: #786B8C;
+}
+
+.contato .title {
+    padding: 1px 22px;
+}
+
+.contato p {
+    padding: 20px;
+}
+
+.contFoot {
+    padding: 28px;
+    font-size: 16px;
+}
+
+.copyrightText {
+    font-size: 10px;
+}
+
+
+.imgProjeto img {
+    width: 82vw;
+}
+
+}
+}
