@@ -97,7 +97,7 @@ header .navigation li a {
 }
 
 .carrousel{
-
+        height: 79vh;
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -525,6 +525,9 @@ header .navigation li a
     flex-direction: column;
     flex-wrap: nowrap;
 }
+main .facaseuprojet div{
+    height: 30px;
+}
 
 .empresa {
     display: flex;
@@ -570,9 +573,10 @@ main .title p {
     width: 88vw;
     height: 58vh;
 }
-main .facaseuprojet div {
-    height: 10vh;}
-    
+
+.carrousel {
+    height: 50vh;}
+
 
 main .facaseuprojet div a {
     font-size: 1.2em;
