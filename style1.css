@@ -36,7 +36,7 @@ header .redes {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    padding-right: 20px;
+    padding-right: 3em;
 }
 
 header .redes img{
@@ -96,6 +96,15 @@ header .navigation li a {
     text-decoration: none;
 }
 
+.carrousel{
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px;    
+    }
+
 #slyder {
     display: flex;
     justify-content: center;
@@ -108,7 +117,6 @@ header .navigation li a {
     flex-wrap: nowrap;
     align-content: center;}
 
-    
 #slyder img{
         opacity: 0;
         position: absolute;
@@ -211,6 +219,9 @@ main .tituloTexto span{
     font-size: 2em;
     color:#93b1e3;
     font-family: 'Tangerine';
+}
+main .title p {
+    font-size: 1.5em;
 }
 
 .ambiente .content{
@@ -427,10 +438,20 @@ section.contato{
 header {position: relative;
     }
 
+header .redes {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header .menu {
+    top: 24px;}
+
+
 header .menu.active{
-        top: 0;
-        position: fixed;
-        background-color: #fff;
+    top: 24px;
+    position: fixed;
+    background-color: #93b1e3;
     }
     
 header .menu img {
@@ -439,17 +460,20 @@ header .menu img {
 
 .menuToggle{
         position: relative;
+        right: 5vw;
         width: 40px;
         height: 40px;
         background: url(imagem/pmenu.png);
-        background-size: 30px;
+        background-size: 35px;
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
     }
 
 .menuToggle.active{
-    left: 88vw;
+    right: 5vw;
+    width: 40px;
+    height: 40px;
     position: fixed;
     background: url(imagem/pmenu.png);
     background-size: 35px;
@@ -464,8 +488,9 @@ header .navigation {
 header .navigation.active{ 
         width: 100%;
         height: 100%;
+        padding-top: 2em;
         position: fixed;
-        top: 5em;
+        top: 116px;
         left: 0;
         display: flex;
         align-items: center;
@@ -523,8 +548,9 @@ header .navigation li a
     font-size: 16px;
 }
 
-.contato p {
+main .title p {
     font-size: 1em;
+    padding: 0 26px;
 }
     
 .contatoForm {
@@ -538,14 +564,6 @@ header .navigation li a
 }
 
 @media (max-width: 570px){
-
-header .redes {
-    justify-content: center;
-}
-
-.menuToggle.active {
-        left: 78vw;
-}
 
 #slyder {
     width: 88vw;
