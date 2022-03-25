@@ -570,10 +570,14 @@ main .title p {
     width: 88vw;
     height: 58vh;
 }
+main .facaseuprojet div {
+    height: 10vh;}
+    
 
 main .facaseuprojet div a {
     font-size: 1.2em;
 }
+
 
 main .tituloTexto {
     font-size: 2em;
