@@ -494,8 +494,10 @@ header .navigation.active{
         left: 0;
         display: flex;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         background: rgb(255, 255, 255);
+        flex-wrap: wrap;
+        align-content: flex-start;
         justify-content: flex-start;}
 
 header .navigation li:hover {
