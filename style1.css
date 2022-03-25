@@ -148,7 +148,7 @@ main .facaseuprojet figure{
 main .facaseuprojet div{
     display: grid;
     grid-template-columns: 1fr;
-    height: 5vh;
+    height: 8vh;
    
 }
 main .facaseuprojet div a{
@@ -568,7 +568,7 @@ main .title p {
 
 #slyder {
     width: 88vw;
-    height: 50vh;
+    height: 58vh;
 }
 
 main .facaseuprojet div a {
