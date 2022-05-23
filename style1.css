@@ -237,7 +237,13 @@ main .title p {
     margin: 20px;
     border: 15px solid #fff;
     box-shadow: 0 5px 35px rgba(14, 4, 4, 0.541);
+    transition: 0.5s;
 }
+
+.ambiente .content .box:hover{
+    transform: translateY(-8px);
+      }
+
 .ambiente .content .box .imgBx{
     position: relative;
     width: 100%;
@@ -252,6 +258,7 @@ main .title p {
     height: 100%;
     object-fit: cover;
 }
+
 
 .ambiente .content .box .text{
     padding: 15px 0 5px;
