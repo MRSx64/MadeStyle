@@ -242,7 +242,7 @@ main .title p {
 
 .ambiente .content .box:hover{
     transform: translateY(-8px);
-      }
+}
 
 .ambiente .content .box .imgBx{
     position: relative;
