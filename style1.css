@@ -234,15 +234,19 @@ main .title p {
 }
 .ambiente .content .box{
     width: 340px;
-    margin: 20px;
-    border: 15px solid #fff;
+    margin: 10px;
+    border: 10px solid #fff;
     box-shadow: 0 5px 35px rgba(14, 4, 4, 0.541);
+    border-radius: 10px;
     transition: 0.5s;
 }
 
 .ambiente .content .box:hover{
     transform: translateY(-8px);
+    border: 10px solid #786b8ca6;
+
 }
+
 
 .ambiente .content .box .imgBx{
     position: relative;
